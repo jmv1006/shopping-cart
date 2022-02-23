@@ -1,11 +1,15 @@
 import './header.css'
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = (props) => {
     return(
         <div id='headerContainer'>
-            <h2>header</h2>
-            <Link to='shop'>Shop</Link>
+            <div id='title'>THE STORE</div>
+            <div id='linksContainer'>
+                <Link to='/'>Home</Link>
+                <Link to='/shop'>Shop</Link>
+                <Link to='/cart'>Cart: {props.cartItems}</Link>
+            </div>
         </div>
     )
 }
