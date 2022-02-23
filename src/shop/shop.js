@@ -30,7 +30,7 @@ const Shop = () => {
             </div>
             <div id='nameAndPriceContainer'>
                 <div className='itemTitle'>{item.name}</div>
-                <div className='itemPrice'>{item.price}</div>
+                <div className='itemPrice'>${item.price}.00</div>
             </div>
             <button onClick={() => addItemToCart(item)} className='addBtn'>Add To Cart</button>
         </div>

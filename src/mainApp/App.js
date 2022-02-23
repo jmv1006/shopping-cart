@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log(cartItems)
+    //console.log(cartItems)
   })
 
   const itemsAmount = cartItems.map(item => item.quantity).reduce((prev, curr) => prev + curr, 0);

@@ -4,7 +4,7 @@ const items = [
     {
         name: 'Yeezy Boost 350 V2 Zion',
         number: 0,
-        price: '$220.00',
+        price: 220.00,
         desc: 'This is an item',
         img: shoeImages[0],
         quantity: 0
@@ -12,7 +12,7 @@ const items = [
     {
         name: 'Air Jordan 1 Mid Paris',
         number: 1,
-        price: '$130.00',
+        price: 130.00,
         desc: 'This is an item',
         img: shoeImages[1],
         quantity: 0
@@ -20,7 +20,7 @@ const items = [
     {
         name: 'Nike Waffle One Premium',
         number: 2,
-        price: '$130.00',
+        price: 130.00,
         desc: 'This is an item',
         img: shoeImages[2],
         quantity: 0
@@ -28,7 +28,7 @@ const items = [
     {
         name: 'Adidas Ultraboost 22: Grey Three',
         number: 3,
-        price: '$190.00',
+        price: 190.00,
         desc: 'This is an item',
         img: shoeImages[3],
         quantity: 0
@@ -36,7 +36,7 @@ const items = [
     {
         name: 'Air Jordan 1 University Blue',
         number: 4,
-        price: '$239.00',
+        price: 239.00,
         desc: 'This is an item',
         img: shoeImages[4],
         quantity: 0
@@ -44,7 +44,7 @@ const items = [
     {
         name: 'Yeezy Boost 350 V2 Blue Tint',
         number: 5,
-        price: '$220.00',
+        price: 220.00,
         desc: 'This is an item',
         img: shoeImages[5], 
         quantity: 0

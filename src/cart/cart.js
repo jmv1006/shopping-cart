@@ -5,6 +5,9 @@ import './cart.css'
 const Cart = () => {
     const Navigate = useNavigate();
     const [cartItems, addCartItems] = useOutletContext();
+    const [subTotal, setSubTotal] = useState(0);
+    const [tax, setTax] = useState(0);
+    const [total, setTotal] = useState(0)
 
     const removeItem = (e) => {
         let index = cartItems.findIndex(item => item.number == e.target.id)
@@ -12,7 +15,7 @@ const Cart = () => {
         editedArr[index].quantity--;
         addCartItems([...editedArr]);
         checkForZero();
-    }
+    };
 
     const checkForZero = () => {
         for(let i = 0; i < cartItems.length; i++) {
@@ -31,11 +34,32 @@ const Cart = () => {
         addCartItems([...editedArr]);
     }
     
+    const calculateTotal = () => {
+        let editedArr = cartItems;
+
+        let seperatePrices = [];
+
+        editedArr.map((item) => 
+            seperatePrices.push(item.quantity * item.price)
+        );
+
+        const finalPrice = seperatePrices.reduce((partialSum, a) => partialSum + a, 0);
+        setSubTotal(finalPrice);
+
+        setTax(finalPrice * 0.095);
+
+        setTotal(subTotal + tax);
+    };
+
+    useEffect(() => {
+        calculateTotal();
+    });
+
     const items = cartItems.map((item) => 
         <div className='cartItem' key={item.number}>
             <img className='cartItemImage' src={item.img}></img>
             <div className='cartItemTitle'>{item.name}</div>
-            <div className='cartItemPrice'>{item.price}</div>
+            <div className='cartItemPrice'>${item.price}.00</div>
             <div id='quantityCont'>
                 <div className="increment" onClick={removeItem} id={item.number}>-</div>
                 <div className="itemQuantity"> {item.quantity} </div>
@@ -46,7 +70,18 @@ const Cart = () => {
 
     return(
         <div id='cartContentContainer'>
-            {items}
+            <div id='cartTitle'>Cart</div>
+            <div id='checkoutAndItemsContainer'>
+                <div id='cartItemsContainer'>
+                    {items}
+                </div>
+                <div id='checkoutContainer'>
+                    Checkout
+                    Total: ${subTotal}
+                    Tax: ${tax}
+                    Total: ${total}
+                </div>
+            </div>
         </div>
     )
 }
