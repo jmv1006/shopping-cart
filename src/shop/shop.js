@@ -7,17 +7,17 @@ const Shop = () => {
 
     const Navigate = useNavigate();
     const [cartItems, addCartItems] = useOutletContext();
+    const [count, setCount] = useOutletContext();
 
 
     const addItemToCart = (item) => {
         if(cartItems.some(e => e.name === item.name)) {
-            console.log('duplicate')
             let index = cartItems.findIndex(e => e.name === item.name);
             let editedArr = cartItems;
             editedArr[index].quantity++;
-            console.log(editedArr)
-            addCartItems(cartItems => [...cartItems, editedArr]);
+            addCartItems([...editedArr])
         } else {
+            item.quantity++;
             addCartItems(cartItems.concat(item));
         }
         //Navigate('/cart')

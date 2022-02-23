@@ -5,17 +5,18 @@ import './main.css'
 
 function App() {
   const [cartItems, addCartItems] = useState([]);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log('change')
     console.log(cartItems)
-  }, [cartItems])
+  })
+
+  const itemsAmount = cartItems.map(item => item.quantity).reduce((prev, curr) => prev + curr, 0);
 
   return (
     <div id='App'>
-      <Header cartItems={cartItems.length}/>
-      {cartItems.length}
-      <Outlet context={[cartItems, addCartItems]}/> {/*this is where our cart, shop, or home show up*/}
+      <Header cartItems={itemsAmount}/>
+      <Outlet context={[count, setCount]} context={[cartItems, addCartItems]}/> {/*this is where our cart, shop, or home show up*/}
       {/* footer here */}
     </div>
   );

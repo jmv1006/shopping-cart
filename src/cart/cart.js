@@ -5,15 +5,27 @@ import './cart.css'
 const Cart = () => {
     const Navigate = useNavigate();
     const [cartItems, addCartItems] = useOutletContext();
+    const [count, setCount] = useState(0)
 
     useEffect(() => {
-        console.log('cart changed')
+        //change
     })
 
 
     const removeItem = (e) => {
-   
+        let index = cartItems.findIndex(item => item.number == e.target.id)
+        cartItems[index].quantity--;
+        setCount(count + 1)
+        checkForZero();
     }
+
+    const checkForZero = () => {
+        for(let i = 0; i < cartItems.length; i++) {
+            if(cartItems[i].quantity == 0) {
+                cartItems.splice(i, 1)
+            }
+        };
+    };
 
     const addItem = () => {
 
@@ -29,7 +41,6 @@ const Cart = () => {
                 <div className="itemQuantity"> {item.quantity} </div>
                 <div className="increment" onClick={addItem} id={item.number}>+</div>
             </div>
-            
         </div>
     )
 
