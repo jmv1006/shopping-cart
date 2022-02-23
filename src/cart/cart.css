@@ -84,4 +84,45 @@
     width: 50%;
     height: 100%;
     border: 2px solid purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+#checkoutPricingContainer {
+    border: 2px solid orange;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#checkoutTitle {
+    width: 10rem;
+    height: 2.5rem;
+    border: 2px solid green;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#checkoutButton {
+    cursor: pointer;
+    width: 15rem;
+    height: 3rem;
+    background-color: #404040;
+    color: white;
+}
+
+#checkoutButton:hover {
+    cursor: pointer;
+    width: 15rem;
+    height: 3rem;
+    background-color: white;
+    color: #404040;
 }

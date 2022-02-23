@@ -44,9 +44,10 @@ const Cart = () => {
         );
 
         const finalPrice = seperatePrices.reduce((partialSum, a) => partialSum + a, 0);
-        setSubTotal(finalPrice);
 
-        setTax(finalPrice * 0.095);
+        setSubTotal(Math.round(finalPrice) * 1);
+
+        setTax(Math.round((finalPrice * 0.095) * 1));
 
         setTotal(subTotal + tax);
     };
@@ -76,10 +77,13 @@ const Cart = () => {
                     {items}
                 </div>
                 <div id='checkoutContainer'>
-                    Checkout
-                    Total: ${subTotal}
-                    Tax: ${tax}
-                    Total: ${total}
+                    <div id='checkoutPricingContainer'>
+                        <div id='checkoutTitle'>Summary</div>
+                        <div id='subtotal'>Subtotal: ${subTotal}</div>
+                        <div id='tax'>Tax: ${tax}</div>
+                        <div id='total'>Total: ${total}</div>
+                    </div>
+                    <button id='checkoutButton'>Checkout</button>
                 </div>
             </div>
         </div>
