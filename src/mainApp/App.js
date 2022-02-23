@@ -4,14 +4,13 @@ import Header from "../header/header";
 import './main.css'
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [cartItems, addCartItems] = useState([]);
 
   return (
     <div id='App'>
-      <Header cartItems={count}/>
-      <Outlet context={[count, setCount]}/> {/*this is where our cart, shop, or home show up*/}
+      <Header cartItems={cartItems.length}/>
+      <Outlet context={[cartItems, addCartItems]}/> {/*this is where our cart, shop, or home show up*/}
       {/* footer here */}
-      {count}
     </div>
   );
 }

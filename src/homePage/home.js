@@ -1,15 +1,21 @@
-import { useOutletContext } from "react-router-dom";
+import { useOutletContext, useNavigate } from "react-router-dom";
+import './home.css'
 
 const Home = () => {
+    const Navigate = useNavigate();
 
-    const [count, setCount] = useOutletContext();
-    const handleClick = () => setCount(count + 1)
-
+    const sendToShop = () => {
+        Navigate('/shop');
+    }
 
     return(
-        <div>
-            Home
-            <button onClick={handleClick}>Click</button>
+        <div id="homePageContainer">
+            <div id='homePageText'>
+                Exclusive sneakers at exclusive prices. Only at SOLES.
+            </div>
+            <div id='goToStoreBtn'>
+                <button onClick={sendToShop}>Shop Now</button>
+            </div>
         </div>
     )
 }
