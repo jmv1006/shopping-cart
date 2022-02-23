@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useOutletContext, useNavigate } from "react-router-dom";
 import items from './items';
 import './shop.css'
@@ -20,15 +19,19 @@ const Shop = () => {
             item.quantity++;
             addCartItems(cartItems.concat(item));
         }
-        //Navigate('/cart')
+        Navigate('/cart')
     };
 
 
     const things = items.map((item) => 
         <div className='item' key={item.number}>
-            <img className='image' key='item.number' src={item.img}></img>
-            <div className='itemTitle'>{item.name}</div>
-            <div className='itemPrice'>{item.price}</div>
+            <div id='imgContainer'>
+                <img className='image' key='item.number' src={item.img}></img>
+            </div>
+            <div id='nameAndPriceContainer'>
+                <div className='itemTitle'>{item.name}</div>
+                <div className='itemPrice'>{item.price}</div>
+            </div>
             <button onClick={() => addItemToCart(item)} className='addBtn'>Add To Cart</button>
         </div>
     );

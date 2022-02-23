@@ -5,30 +5,30 @@ import './cart.css'
 const Cart = () => {
     const Navigate = useNavigate();
     const [cartItems, addCartItems] = useOutletContext();
-    const [count, setCount] = useState(0)
-
-    useEffect(() => {
-        //change
-    })
-
 
     const removeItem = (e) => {
         let index = cartItems.findIndex(item => item.number == e.target.id)
-        cartItems[index].quantity--;
-        setCount(count + 1)
+        let editedArr = cartItems;
+        editedArr[index].quantity--;
+        addCartItems([...editedArr]);
         checkForZero();
     }
 
     const checkForZero = () => {
         for(let i = 0; i < cartItems.length; i++) {
             if(cartItems[i].quantity == 0) {
-                cartItems.splice(i, 1)
+                let editedArr = cartItems;
+                editedArr.splice(i, 1)
+                addCartItems([...editedArr])
             }
         };
     };
 
-    const addItem = () => {
-
+    const addItem = (e) => {
+        let index = cartItems.findIndex(item => item.number == e.target.id)
+        let editedArr = cartItems;
+        editedArr[index].quantity++;
+        addCartItems([...editedArr]);
     }
     
     const items = cartItems.map((item) => 

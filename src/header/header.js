@@ -6,9 +6,9 @@ const Header = (props) => {
         <div id='headerContainer'>
             <div id='title'>SOLES</div>
             <div id='linksContainer'>
-                <Link to='/'>Home</Link>
-                <Link to='/shop'>Shop</Link>
-                <Link to='/cart'>Cart: {props.cartItems}</Link>
+                <Link to='/' className='navButton'>Home</Link>
+                <Link to='/shop' className='navButton'>Shop</Link>
+                <Link to='/cart' className='navButton'>Cart: {props.cartItems}</Link>
             </div>
         </div>
     )
