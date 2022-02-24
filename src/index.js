@@ -21,7 +21,10 @@ ReactDOM.render(
           <Route path="/" element={<Home />} />
           <Route path="shop" element={<Shop />} />
           <Route path="cart" element={<Cart />} />
-          <Route path="iteminfo" element={<ItemInfo />} />
+          <Route path="iteminfo" element={<ItemInfo />}>
+            <Route path=':itemNumber' element={<Item />} />
+          </Route>
+          {/*Here goes the route to the item info pages, or the invoices*/}
         </Route>
       </Routes>
     </BrowserRouter>

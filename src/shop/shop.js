@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useOutletContext, useNavigate } from "react-router-dom";
+import { useOutletContext, useNavigate, Link } from "react-router-dom";
 import items from './items';
 import './shop.css'
 
@@ -21,16 +21,12 @@ const Shop = () => {
         Navigate('/cart')
     };
 
-    const sendToItemInfo = (item) => {
-        //setCurrentItem(currentItem => item);
-        //setCurrentItem(currentItem + 1);
-       // Navigate('/iteminfo')
-    }
-
     const things = items.map((item) => 
         <div className='item' key={item.number}>
             <div id='imgContainer'>
-                <img onClick={() => sendToItemInfo(item)} className='image' key='item.number' src={item.img}></img>
+                <Link to={`/iteminfo/${item.number}`} key={item.number}>
+                    <img className='image' key='item.number' src={item.img}></img>
+                </Link>
             </div>
             <div id='nameAndPriceContainer'>
                 <div className='itemTitle'>{item.name}</div>
@@ -43,6 +39,13 @@ const Shop = () => {
     return(
         <div id='mainShopContainer'>
             <div id='shopTitle'>Shop</div>
+            <div>
+            {
+                items.map((item) => (
+                    <Link to={`/iteminfo/${item.number}`} key={item.number}>{item.number}</Link>
+                ))
+            }
+            </div>
             <div id='itemsDisplay'>
                 {things}
             </div>

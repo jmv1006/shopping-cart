@@ -1,16 +1,21 @@
 import './itemInfo.css'
-import { useOutletContext, Link } from "react-router-dom";
+import { useOutletContext, Link, useParams } from "react-router-dom";
+import items from '../shop/items';
 
 const Item = () => {
 
+    let params = useParams();
+    let index = items.findIndex(item => item.number == (params.itemNumber))
+    
+    const chosenItem = items[index];
+
+    const name = chosenItem.name;
+    const price = chosenItem.price;
+
     return(
         <div>
-           <div id='imageContainer'>
-                Item
-            </div>
-            <div id='shoeInfoContainer'>
-
-            </div>
+            {name}
+            {price}
         </div>
     )
 }
