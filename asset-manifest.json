@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.17881a52.css",
-    "main.js": "/shopping-cart/static/js/main.f326da40.js",
+    "main.js": "/shopping-cart/static/js/main.b342d713.js",
     "static/media/homepageimg.jpeg": "/shopping-cart/static/media/homepageimg.c5b8200219ddf1549815.jpeg",
     "static/media/yeezybluetint.jpeg": "/shopping-cart/static/media/yeezybluetint.378e9018490a581a2fd0.jpeg",
     "static/media/aj1paris.jpeg": "/shopping-cart/static/media/aj1paris.a48e78dcbb1ea6a43ebd.jpeg",
@@ -11,10 +11,10 @@
     "static/media/ub22grey.jpeg": "/shopping-cart/static/media/ub22grey.8e3d2bddd24395bf985f.jpeg",
     "index.html": "/shopping-cart/index.html",
     "main.17881a52.css.map": "/shopping-cart/static/css/main.17881a52.css.map",
-    "main.f326da40.js.map": "/shopping-cart/static/js/main.f326da40.js.map"
+    "main.b342d713.js.map": "/shopping-cart/static/js/main.b342d713.js.map"
   },
   "entrypoints": [
     "static/css/main.17881a52.css",
-    "static/js/main.f326da40.js"
+    "static/js/main.b342d713.js"
   ]
 }
