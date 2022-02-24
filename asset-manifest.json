@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/github.io/shopping-cart/static/css/main.7f9e5817.css",
-    "main.js": "/github.io/shopping-cart/static/js/main.a1fcb506.js",
-    "static/media/homepageimg.jpeg": "/github.io/shopping-cart/static/media/homepageimg.c5b8200219ddf1549815.jpeg",
-    "static/media/yeezybluetint.jpeg": "/github.io/shopping-cart/static/media/yeezybluetint.378e9018490a581a2fd0.jpeg",
-    "static/media/aj1paris.jpeg": "/github.io/shopping-cart/static/media/aj1paris.a48e78dcbb1ea6a43ebd.jpeg",
-    "static/media/aj1ub.jpeg": "/github.io/shopping-cart/static/media/aj1ub.4ccd8742674dd730b760.jpeg",
-    "static/media/waffleone.jpeg": "/github.io/shopping-cart/static/media/waffleone.edd1d0f517592da89c99.jpeg",
-    "static/media/yeezyzyon.jpeg": "/github.io/shopping-cart/static/media/yeezyzyon.bcef8122b22abf347606.jpeg",
-    "static/media/ub22grey.jpeg": "/github.io/shopping-cart/static/media/ub22grey.8e3d2bddd24395bf985f.jpeg",
-    "index.html": "/github.io/shopping-cart/index.html",
-    "main.7f9e5817.css.map": "/github.io/shopping-cart/static/css/main.7f9e5817.css.map",
-    "main.a1fcb506.js.map": "/github.io/shopping-cart/static/js/main.a1fcb506.js.map"
+    "main.css": "/github.com/shopping-cart/static/css/main.7bb8d624.css",
+    "main.js": "/github.com/shopping-cart/static/js/main.40513870.js",
+    "static/media/homepageimg.jpeg": "/github.com/shopping-cart/static/media/homepageimg.c5b8200219ddf1549815.jpeg",
+    "static/media/yeezybluetint.jpeg": "/github.com/shopping-cart/static/media/yeezybluetint.378e9018490a581a2fd0.jpeg",
+    "static/media/aj1paris.jpeg": "/github.com/shopping-cart/static/media/aj1paris.a48e78dcbb1ea6a43ebd.jpeg",
+    "static/media/aj1ub.jpeg": "/github.com/shopping-cart/static/media/aj1ub.4ccd8742674dd730b760.jpeg",
+    "static/media/waffleone.jpeg": "/github.com/shopping-cart/static/media/waffleone.edd1d0f517592da89c99.jpeg",
+    "static/media/yeezyzyon.jpeg": "/github.com/shopping-cart/static/media/yeezyzyon.bcef8122b22abf347606.jpeg",
+    "static/media/ub22grey.jpeg": "/github.com/shopping-cart/static/media/ub22grey.8e3d2bddd24395bf985f.jpeg",
+    "index.html": "/github.com/shopping-cart/index.html",
+    "main.7bb8d624.css.map": "/github.com/shopping-cart/static/css/main.7bb8d624.css.map",
+    "main.40513870.js.map": "/github.com/shopping-cart/static/js/main.40513870.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f9e5817.css",
-    "static/js/main.a1fcb506.js"
+    "static/css/main.7bb8d624.css",
+    "static/js/main.40513870.js"
   ]
 }
