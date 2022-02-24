@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 #headerContainer {
     width: 100%;
@@ -21,13 +22,13 @@
 }
 
 #linksContainer {
-    border: 2px solid red;
     width: 18rem;
     height: 40%;
     display: flex;
     justify-content: center;
     gap: 4rem;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navButton {

@@ -71,9 +71,10 @@ const Cart = () => {
 
     return(
         <div id='cartContentContainer'>
-            <div id='cartTitle'>Cart</div>
+            <div id='cartTitle'>Your Cart</div>
             <div id='checkoutAndItemsContainer'>
                 <div id='cartItemsContainer'>
+                    <h1>Item Summary</h1>
                     {items}
                 </div>
                 <div id='checkoutContainer'>

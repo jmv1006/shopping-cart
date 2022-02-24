@@ -1,6 +1,7 @@
 import { Outlet, useOutletContext} from "react-router-dom";
 import { useState, useEffect } from "react";
 import Header from "../header/header";
+import Footer from "../footer/footer";
 import './main.css'
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
     <div id='App'>
       <Header cartItems={itemsAmount}/>
       <Outlet context={[count, setCount]} context={[cartItems, addCartItems]}/> {/*this is where our cart, shop, or home show up*/}
-      {/* footer here */}
+      <Footer />
     </div>
   );
 }
