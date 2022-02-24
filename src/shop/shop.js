@@ -39,13 +39,6 @@ const Shop = () => {
     return(
         <div id='mainShopContainer'>
             <div id='shopTitle'>Shop</div>
-            <div>
-            {
-                items.map((item) => (
-                    <Link to={`/iteminfo/${item.number}`} key={item.number}>{item.number}</Link>
-                ))
-            }
-            </div>
             <div id='itemsDisplay'>
                 {things}
             </div>

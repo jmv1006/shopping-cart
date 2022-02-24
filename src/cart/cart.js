@@ -46,9 +46,9 @@ const Cart = () => {
 
         const finalPrice = seperatePrices.reduce((partialSum, a) => partialSum + a, 0);
 
-        setSubTotal(Math.round(finalPrice) * 1);
+        setSubTotal(finalPrice);
 
-        setTax(Math.round((finalPrice * 0.095) * 1));
+        setTax(finalPrice * 0.095);
 
         setTotal(subTotal + tax);
     };

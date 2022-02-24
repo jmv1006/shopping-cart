@@ -9,16 +9,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: .25rem;
 }
 
 #title {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: auto;
     height: 4rem;
     font-family: 'Barlow';
     font-size: 2.75rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+#title:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 4rem;
+    font-family: 'Barlow';
+    font-size: 2.9rem;
+    cursor: pointer;
+    margin-left: 1rem;
 }
 
 #linksContainer {

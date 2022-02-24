@@ -1,10 +1,16 @@
 import './header.css'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = (props) => {
+
+    const Navigate = useNavigate();
+    const sendHome = () => {
+        Navigate('/')
+    };
+    
     return(
         <div id='headerContainer'>
-            <div id='title'>SOLES</div>
+            <div onClick={sendHome} id='title'>SOLES</div>
             <div id='linksContainer'>
                 <Link to='/' className='navButton'>Home</Link>
                 <Link to='/shop' className='navButton'>Shop</Link>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 #homePageContainer {
     width: 100%;
     height: 95%;
@@ -6,29 +8,46 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
+    gap: 1.5rem;
 }
 
 #homePageText {
-    width: 25rem;
-    height: 15rem;
-    border: 2px solid blue;
-    font-size: 3rem;
+    width: 100%;
+    height: 10rem;
+    font-size: 1.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
 }
 
 #homePageImgContainer {
     width: 100%;
-    height: 80%;
-    border: 2px solid orange;
+    height: 65%;
     display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    background-image: url(./homepageimg.jpeg);
-    background-position: 50% 50%;
-    background-size: cover;
+}
+
+#homePageImg {
+    width: 90rem;
+    height: 34.5rem;
+    border: 1px solid black;
+}
+
+#shopNow {
+    width: 15rem;
+    height: 2.5rem;
+    cursor: pointer;
+    background-color: #404040;
+    color: white;
+}
+
+#shopNow:hover {
+    width: 15rem;
+    height: 2.5rem;
+    cursor: pointer;
+    background-color: white;
+    color: #404040;
 }
