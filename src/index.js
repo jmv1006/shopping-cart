@@ -15,7 +15,7 @@ import './mainApp/main.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/shopping-cart' >
       <Routes>
         <Route path="/" element={<App />}>
           <Route path="/" element={<Home />} />
