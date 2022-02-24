@@ -5,6 +5,7 @@ import './cart.css'
 const Cart = () => {
     const Navigate = useNavigate();
     const [cartItems, addCartItems] = useOutletContext();
+    const [currentItem, setCurrentItem] = useOutletContext();
     const [subTotal, setSubTotal] = useState(0);
     const [tax, setTax] = useState(0);
     const [total, setTotal] = useState(0)

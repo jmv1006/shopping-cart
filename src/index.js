@@ -7,8 +7,10 @@ import {
 } from "react-router-dom";
 import App from './mainApp/App';
 import Shop from './shop/shop';
-import Cart from './cart/cart'
+import Cart from './cart/cart';
+import ItemInfo from './itemInfoPage/itemInfo';
 import Home from './homePage/home';
+import Item from './itemInfoPage/item';
 import './mainApp/main.css'
 
 ReactDOM.render(
@@ -19,6 +21,7 @@ ReactDOM.render(
           <Route path="/" element={<Home />} />
           <Route path="shop" element={<Shop />} />
           <Route path="cart" element={<Cart />} />
+          <Route path="iteminfo" element={<ItemInfo />} />
         </Route>
       </Routes>
     </BrowserRouter>

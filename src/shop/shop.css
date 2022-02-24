@@ -45,6 +45,7 @@
 .image {
     width: 19rem;
     height: auto;
+    cursor: pointer;
 }
 
 #nameAndPriceContainer {
