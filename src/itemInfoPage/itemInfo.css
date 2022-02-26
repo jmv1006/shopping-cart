@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+
+
 #infoPageContainer {
     width: 100%;
     height: 100%;
@@ -12,6 +14,7 @@
 @media screen and (min-width: 1105px) {
     #itemInfoFullPageWrapper {
         width: 90%;
+        min-height: 60%;
         height: auto;
         display: flex;
         flex-direction: row;
@@ -20,27 +23,25 @@
         flex-wrap: wrap;
         font-family: 'Poppins', sans-serif;
         gap: 2rem;
-        overflow-y: auto;
     }
 }
 
 @media screen and (max-width: 1105px) {
     #itemInfoFullPageWrapper {
         width: 90%;
+        min-height: 90%;
         height: auto;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        flex-wrap: wrap;
         font-family: 'Poppins', sans-serif;
-        overflow-y: auto;
     }
 }
 
 .itemImageContainer {
     width: 30rem;
-    height: 25rem;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,43 +54,42 @@
 }
 .itemInfoContainer {
     width: 30rem;
-    height: 25rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
 }   
 
 .itemInfoName {
-    width: 125%;
-    height: 12%;
+    width: 45rem;
+    height: 4rem;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
 }
 
 .itemInfoPrice {
-    width: 10%;
-    height: 7%;
+    width: 10rem;
+    height: 3rem;
     font-size: 1.2rem;
     text-align: center;
 }
 
 .itemInfoDesc {
-    width: 80%;
-    height: 25%;
+    width: 25rem;
+    height: 7rem;
     text-align: center;
 }
 
 .sizesDisplay {
     width: 20rem;
-    height: 20rem;
+    height: 8rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;  
+    grid-column-gap: none;
+    grid-row-gap: none;  
     justify-content: space-evenly;
     justify-items: center;
     align-content: space-evenly;
@@ -102,18 +102,20 @@
     cursor: pointer;
 }
 
-.addBtn {
+.addToCartBtn {
     cursor: pointer;
-    width: 60%;
-    height: 6rem;
+    width: 20rem;
+    height: 3rem;
     background-color: #404040;
     color: white;
+    margin-top: 1rem;
 }
 
-.addBtn:hover {
+.addToCartBtn:hover {
+    margin-top: 1rem;
     cursor: pointer;
-    width: 60%;
-    height: 6rem;
+    width: 20rem;
+    height: 3rem;
     background-color: white;
     color: #404040;
 }

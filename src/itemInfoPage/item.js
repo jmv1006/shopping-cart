@@ -59,10 +59,10 @@ const Item = () => {
         e.target.style.color = 'white';
     }
 
-    const sizes = [7.0,7.5,8.0,8.5,9.0,9.5,10.0,10.5,11.0,11.5,12.0,12.5]
+    const sizes = [7.0,7.5,8.0,8.5,9.0,9.5,10,10.5,11,11.5,12,12.5]
     const sizesDisplay = sizes.map((size) => 
         <button id={size} onClick={chooseSize} key={size} className='sizeBtn'>{size}</button>
-    );
+    )
 
     return(
         <div id='itemInfoFullPageWrapper'>
@@ -77,7 +77,7 @@ const Item = () => {
                 <div className='sizesDisplay'>
                     {sizesDisplay}
                 </div>
-                <button onClick={() => addItemToCart(chosenItem)} className='addBtn'>Add To Cart</button>
+                <button onClick={() => addItemToCart(chosenItem)} className='addToCartBtn'>Add To Cart</button>
             </div>
         </div>
     )
