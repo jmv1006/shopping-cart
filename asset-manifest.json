@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.d2a2a2ef.css",
-    "main.js": "/shopping-cart/static/js/main.8fdd0d28.js",
+    "main.css": "/shopping-cart/static/css/main.af3fefc2.css",
+    "main.js": "/shopping-cart/static/js/main.2bbd1856.js",
     "static/media/homepageimg.png": "/shopping-cart/static/media/homepageimg.7d8ad9435130faaed443.png",
     "static/media/yeezybluetint.jpeg": "/shopping-cart/static/media/yeezybluetint.378e9018490a581a2fd0.jpeg",
     "static/media/aj1paris.jpeg": "/shopping-cart/static/media/aj1paris.a48e78dcbb1ea6a43ebd.jpeg",
@@ -10,11 +10,11 @@
     "static/media/yeezyzyon.jpeg": "/shopping-cart/static/media/yeezyzyon.bcef8122b22abf347606.jpeg",
     "static/media/ub22grey.jpeg": "/shopping-cart/static/media/ub22grey.8e3d2bddd24395bf985f.jpeg",
     "index.html": "/shopping-cart/index.html",
-    "main.d2a2a2ef.css.map": "/shopping-cart/static/css/main.d2a2a2ef.css.map",
-    "main.8fdd0d28.js.map": "/shopping-cart/static/js/main.8fdd0d28.js.map"
+    "main.af3fefc2.css.map": "/shopping-cart/static/css/main.af3fefc2.css.map",
+    "main.2bbd1856.js.map": "/shopping-cart/static/js/main.2bbd1856.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2a2a2ef.css",
-    "static/js/main.8fdd0d28.js"
+    "static/css/main.af3fefc2.css",
+    "static/js/main.2bbd1856.js"
   ]
 }
