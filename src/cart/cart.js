@@ -5,7 +5,6 @@ import './cart.css'
 const Cart = () => {
     const Navigate = useNavigate();
     const [cartItems, addCartItems] = useOutletContext();
-    const [currentItem, setCurrentItem] = useOutletContext();
     const [subTotal, setSubTotal] = useState(0);
     const [tax, setTax] = useState(0);
     const [total, setTotal] = useState(0)
@@ -46,11 +45,11 @@ const Cart = () => {
 
         const finalPrice = seperatePrices.reduce((partialSum, a) => partialSum + a, 0);
 
-        setSubTotal(finalPrice);
+        setSubTotal(Math.round(finalPrice));
 
-        setTax(finalPrice * 0.095);
+        setTax(Math.round(finalPrice * 0.095));
 
-        setTotal(subTotal + tax);
+        setTotal(Math.round(subTotal + tax));
     };
 
     useEffect(() => {

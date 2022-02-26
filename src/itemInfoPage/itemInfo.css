@@ -8,15 +8,32 @@
     align-items: center;
 }
 
-#itemInfoFullPageWrapper {
-    width: 90%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    font-family: 'Poppins', sans-serif;
+
+@media screen and (min-width: 1105px) {
+    #itemInfoFullPageWrapper {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-family: 'Poppins', sans-serif;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 1105px) {
+    #itemInfoFullPageWrapper {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-family: 'Poppins', sans-serif;
+    }
 }
 
 .itemImageContainer {

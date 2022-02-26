@@ -1,5 +1,7 @@
 import './header.css'
 import { Link, useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const Header = (props) => {
 
@@ -14,7 +16,7 @@ const Header = (props) => {
             <div id='linksContainer'>
                 <Link to='/' className='navButton'>Home</Link>
                 <Link to='/shop' className='navButton'>Shop</Link>
-                <Link to='/cart' className='navButton'>Cart: {props.cartItems}</Link>
+                <Link to='/cart' className='navButton'><FontAwesomeIcon icon={faShoppingCart} /> {props.cartItems} </Link>
             </div>
         </div>
     )
