@@ -71,3 +71,19 @@
     background-color: white;
     color: #404040;
 }
+
+.viewBtn {
+    cursor: pointer;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #404040;
+    color: white;
+}
+
+.viewBtn:hover {
+    cursor: pointer;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: white;
+    color: #404040;
+}

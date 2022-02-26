@@ -4,23 +4,6 @@ import items from './items';
 import './shop.css'
 
 const Shop = () => {
-    const Navigate = useNavigate();
-    const [cartItems, addCartItems] = useOutletContext();
-
-
-    const addItemToCart = (item) => {
-        if(cartItems.some(e => e.name === item.name)) {
-            let index = cartItems.findIndex(e => e.name === item.name);
-            let editedArr = cartItems;
-            editedArr[index].quantity++;
-            addCartItems([...editedArr])
-        } else {
-            item.quantity++;
-            addCartItems(cartItems.concat(item));
-        }
-        Navigate('/cart')
-    };
-
     const things = items.map((item) => 
         <div className='item' key={item.number}>
             <div id='imgContainer'>
@@ -32,7 +15,9 @@ const Shop = () => {
                 <div className='itemTitle'>{item.name}</div>
                 <div className='itemPrice'>${item.price}.00</div>
             </div>
-            <button onClick={() => addItemToCart(item)} className='addBtn'>Add To Cart</button>
+            <Link to={`/iteminfo/${item.number}`} key={item.number}>
+                    <button className="viewBtn">View</button>
+            </Link>
         </div>
     );
 

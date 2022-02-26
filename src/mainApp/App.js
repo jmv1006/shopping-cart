@@ -6,10 +6,9 @@ import './main.css'
 
 function App() {
   const [cartItems, addCartItems] = useState([]);
-  const [currentItem, setCurrentItem] = useState(0);
 
   useEffect(() => {
-    //console.log('change')
+   
   })
 
   const itemsAmount = cartItems.map(item => item.quantity).reduce((prev, curr) => prev + curr, 0);

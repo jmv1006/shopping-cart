@@ -2,10 +2,11 @@
 
 #infoPageContainer {
     width: 100%;
-    height: 95%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: auto;
 }
 
 
@@ -20,6 +21,7 @@
         flex-wrap: wrap;
         font-family: 'Poppins', sans-serif;
         gap: 2rem;
+        overflow-y: auto;
     }
 }
 
@@ -33,6 +35,7 @@
         align-items: center;
         flex-wrap: wrap;
         font-family: 'Poppins', sans-serif;
+        overflow-y: auto;
     }
 }
 
@@ -78,4 +81,24 @@
     width: 80%;
     height: 25%;
     text-align: center;
+}
+
+.sizesDisplay {
+    width: 20rem;
+    height: 20rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;  
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.sizeBtn {
+    width: 3.5rem;
+    height: 2rem;
+    cursor: pointer;
 }
