@@ -50,3 +50,8 @@
     color: white;
     text-decoration: none;
 }
+
+.navButton:hover {
+    color: white;
+    text-decoration: underline;
+}
