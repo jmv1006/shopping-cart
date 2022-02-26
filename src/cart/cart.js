@@ -61,7 +61,7 @@ const Cart = () => {
     });
 
     const items = cartItems.map((item) => 
-        <div className='cartItem' key={item.number}>
+        <div className='cartItem' key={item.size}>
             <img onClick={() => navigateToItem(item.number)} className='cartItemImage' src={item.img}></img>
             <div className='cartItemTitle'>{item.name}</div>
             <div className='cartItemPrice'>${item.price}.00</div>
@@ -79,7 +79,7 @@ const Cart = () => {
             <div id='cartTitle'>Your Cart</div>
             <div id='checkoutAndItemsContainer'>
                 <div id='cartItemsContainer'>
-                    <h1>Item Summary</h1>
+                    <div className="itemSum">Item Summary</div>
                     {items}
                 </div>
                 <div id='checkoutContainer'>
