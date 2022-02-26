@@ -2,12 +2,14 @@
 
 #mainShopContainer {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+    margin: 1rem;
 }
 
 #shopTitle {
@@ -54,22 +56,6 @@
     justify-content: center;
     align-items: center;
     gap: .25rem;
-}
-
-.addBtn {
-    cursor: pointer;
-    width: 60%;
-    height: 2.5rem;
-    background-color: #404040;
-    color: white;
-}
-
-.addBtn:hover {
-    cursor: pointer;
-    width: 60%;
-    height: 2.5rem;
-    background-color: white;
-    color: #404040;
 }
 
 .viewBtn {

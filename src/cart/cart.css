@@ -61,6 +61,7 @@
 .cartItemImage {
     width: 13rem;
     height: 10rem;
+    cursor: pointer;
 }
 
 #quantityCont {

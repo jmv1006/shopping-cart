@@ -1,4 +1,4 @@
-import { useOutletContext, useNavigate } from "react-router-dom";
+import { useOutletContext, useNavigate, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import './cart.css'
 
@@ -9,8 +9,14 @@ const Cart = () => {
     const [tax, setTax] = useState(0);
     const [total, setTotal] = useState(0)
 
-    const removeItem = (e) => {
-        let index = cartItems.findIndex(item => item.number == e.target.id)
+    
+    const navigateToItem = (number) => {
+        Navigate(`/iteminfo/${number}`);
+    };
+    
+
+    const removeItem = (item) => {
+        let index = cartItems.findIndex(e => e.name === item.name && e.size === item.size)
         let editedArr = cartItems;
         editedArr[index].quantity--;
         addCartItems([...editedArr]);
@@ -27,8 +33,8 @@ const Cart = () => {
         };
     };
 
-    const addItem = (e) => {
-        let index = cartItems.findIndex(item => item.number == e.target.id)
+    const addItem = (item) => {
+        let index = cartItems.findIndex(e => e.name === item.name && e.size === item.size)
         let editedArr = cartItems;
         editedArr[index].quantity++;
         addCartItems([...editedArr]);
@@ -36,9 +42,7 @@ const Cart = () => {
     
     const calculateTotal = () => {
         let editedArr = cartItems;
-
         let seperatePrices = [];
-
         editedArr.map((item) => 
             seperatePrices.push(item.quantity * item.price)
         );
@@ -58,13 +62,14 @@ const Cart = () => {
 
     const items = cartItems.map((item) => 
         <div className='cartItem' key={item.number}>
-            <img className='cartItemImage' src={item.img}></img>
+            <img onClick={() => navigateToItem(item.number)} className='cartItemImage' src={item.img}></img>
             <div className='cartItemTitle'>{item.name}</div>
             <div className='cartItemPrice'>${item.price}.00</div>
+            <div className='cartItemPrice'>Size: {item.size}</div>
             <div id='quantityCont'>
-                <div className="increment" onClick={removeItem} id={item.number}>-</div>
+                <div className="increment" onClick={() => removeItem(item)} id={item.number}>-</div>
                 <div className="itemQuantity"> {item.quantity} </div>
-                <div className="increment" onClick={addItem} id={item.number}>+</div>
+                <div className="increment" onClick={() => addItem(item)} id={item.number}>+</div>
             </div>
         </div>
     )

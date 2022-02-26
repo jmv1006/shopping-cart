@@ -9,7 +9,6 @@
     overflow-y: auto;
 }
 
-
 @media screen and (min-width: 1105px) {
     #itemInfoFullPageWrapper {
         width: 90%;
@@ -101,4 +100,20 @@
     width: 3.5rem;
     height: 2rem;
     cursor: pointer;
+}
+
+.addBtn {
+    cursor: pointer;
+    width: 60%;
+    height: 6rem;
+    background-color: #404040;
+    color: white;
+}
+
+.addBtn:hover {
+    cursor: pointer;
+    width: 60%;
+    height: 6rem;
+    background-color: white;
+    color: #404040;
 }

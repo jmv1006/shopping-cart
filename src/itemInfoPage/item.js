@@ -4,7 +4,6 @@ import items from '../shop/items';
 import { useState } from 'react';
 
 const Item = () => {
-
     const [cartItems, addCartItems] = useOutletContext();
     const [size, setSize] = useState('');
 
@@ -24,16 +23,23 @@ const Item = () => {
             alert('Choose a Size!')
         } else {
             item.size = size;
-            console.log(item.size);
-    
-            if(cartItems.some(e => e.name === item.name)) {
-                let index = cartItems.findIndex(e => e.name === item.name);
+            if(cartItems.some(e => e.name === item.name && e.size === item.size)) {
+                let index = cartItems.findIndex(e => e.name === item.name && e.size === item.size)
                 let editedArr = cartItems;
                 editedArr[index].quantity++;
                 addCartItems([...editedArr])
             } else {
-                item.quantity++;
-                addCartItems(cartItems.concat(item));
+                let newItem = {
+                    name: item.name,
+                    price: item.price,
+                    desc: item.desc,
+                    img: item.img,
+                    quantity: 0,
+                    number: item.number,
+                    size: item.size
+                }
+                newItem.quantity++;
+                addCartItems(cartItems.concat(newItem));
             }
             Navigate('/cart');
         };
@@ -53,10 +59,10 @@ const Item = () => {
         e.target.style.color = 'white';
     }
 
-    const sizes = [7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12,12.5]
+    const sizes = [7.0,7.5,8.0,8.5,9.0,9.5,10.0,10.5,11.0,11.5,12.0,12.5]
     const sizesDisplay = sizes.map((size) => 
         <button id={size} onClick={chooseSize} key={size} className='sizeBtn'>{size}</button>
-    )
+    );
 
     return(
         <div id='itemInfoFullPageWrapper'>
