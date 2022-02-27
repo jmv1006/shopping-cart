@@ -37,13 +37,14 @@
 }
 
 #linksContainer {
-    width: 18rem;
+    width: auto;
     height: 40%;
     display: flex;
     justify-content: center;
-    gap: 4rem;
+    gap: 2rem;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    margin-right: 2rem;
 }
 
 .navButton {

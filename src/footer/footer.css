@@ -5,9 +5,32 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 2.5rem;
-    background-color: #404040;
-    color: white;
-    position: relative;
+    height: auto;
+    min-height: 15rem;
+    background-color: #e6e6e6;
+    color: black;
     font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#emailContainer {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#myInfo {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
+#gitLogoContainer {
+    width: 1.75rem;
+    height: 1.75rem;
+    cursor: pointer;
 }

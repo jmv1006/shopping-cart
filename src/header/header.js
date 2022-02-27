@@ -16,6 +16,7 @@ const Header = (props) => {
             <div id='linksContainer'>
                 <Link to='/' className='navButton'>Home</Link>
                 <Link to='/shop' className='navButton'>Shop</Link>
+                <Link to='/about' className='navButton'>About</Link>
                 <Link to='/cart' className='navButton'><FontAwesomeIcon icon={faShoppingCart} /> {props.cartItems} </Link>
             </div>
         </div>

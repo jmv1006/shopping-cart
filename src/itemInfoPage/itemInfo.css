@@ -1,46 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-
-
 #infoPageContainer {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-y: auto;
 }
 
-@media screen and (min-width: 1105px) {
+@media screen and (min-width: 1313px) {
     #itemInfoFullPageWrapper {
-        width: 90%;
-        min-height: 60%;
+        width: auto;
         height: auto;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
         font-family: 'Poppins', sans-serif;
-        gap: 2rem;
+        overflow-x: hidden;
+        padding: 3rem;
     }
 }
 
-@media screen and (max-width: 1105px) {
+@media screen and (max-width: 1313px) {
     #itemInfoFullPageWrapper {
-        width: 90%;
-        min-height: 90%;
+        width: auto;
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+        padding: 3rem;
+        gap: 1rem;
     }
 }
 
 .itemImageContainer {
-    width: 30rem;
+    width: auto;
     height: auto;
     display: flex;
     justify-content: center;
@@ -53,17 +52,18 @@
     border: 1px solid black;
 }
 .itemInfoContainer {
-    width: 30rem;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
 }   
 
 .itemInfoName {
     width: 45rem;
-    height: 4rem;
+    height: auto;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -71,14 +71,15 @@
 
 .itemInfoPrice {
     width: 10rem;
-    height: 3rem;
+    height: auto;
     font-size: 1.2rem;
     text-align: center;
 }
 
 .itemInfoDesc {
     width: 25rem;
-    height: 7rem;
+    height: auto;
+    min-height: 5rem;
     text-align: center;
 }
 
