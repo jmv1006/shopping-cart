@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.bcd3481c.css",
-    "main.js": "/shopping-cart/static/js/main.5ed89d38.js",
+    "main.js": "/shopping-cart/static/js/main.78941f69.js",
     "static/media/homepageimg.png": "/shopping-cart/static/media/homepageimg.7d8ad9435130faaed443.png",
     "static/media/yeezybluetint.jpeg": "/shopping-cart/static/media/yeezybluetint.378e9018490a581a2fd0.jpeg",
     "static/media/sneakers.jpeg": "/shopping-cart/static/media/sneakers.09397af45810ccc2035c.jpeg",
@@ -9,13 +9,14 @@
     "static/media/aj1ub.jpeg": "/shopping-cart/static/media/aj1ub.4ccd8742674dd730b760.jpeg",
     "static/media/waffleone.jpeg": "/shopping-cart/static/media/waffleone.edd1d0f517592da89c99.jpeg",
     "static/media/yeezyzyon.jpeg": "/shopping-cart/static/media/yeezyzyon.bcef8122b22abf347606.jpeg",
+    "static/media/aj11space.jpeg": "/shopping-cart/static/media/aj11space.1523b785e6479109697c.jpeg",
     "static/media/ub22grey.jpeg": "/shopping-cart/static/media/ub22grey.8e3d2bddd24395bf985f.jpeg",
     "index.html": "/shopping-cart/index.html",
     "main.bcd3481c.css.map": "/shopping-cart/static/css/main.bcd3481c.css.map",
-    "main.5ed89d38.js.map": "/shopping-cart/static/js/main.5ed89d38.js.map"
+    "main.78941f69.js.map": "/shopping-cart/static/js/main.78941f69.js.map"
   },
   "entrypoints": [
     "static/css/main.bcd3481c.css",
-    "static/js/main.5ed89d38.js"
+    "static/js/main.78941f69.js"
   ]
 }
