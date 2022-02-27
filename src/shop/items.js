@@ -57,6 +57,15 @@ const items = [
         img: shoeImages[5], 
         quantity: 0,
         size: ''
+    },
+    {
+        name: 'Air Jordan 11 Space Jam',
+        number: 6,
+        price: 220.00,
+        desc: 'Inspired by the 1996 film starring MJ himself, these are sure to take you out of this world.',
+        img: shoeImages[6], 
+        quantity: 0,
+        size: ''
     }
 ]
 
