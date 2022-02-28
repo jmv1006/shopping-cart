@@ -61,7 +61,7 @@ const Cart = () => {
     });
 
     const items = cartItems.map((item) => 
-        <div className='cartItem' key={item.size}>
+        <div className='cartItem' key={`${item.name},${item.size}`}>
             <img onClick={() => navigateToItem(item.number)} className='cartItemImage' src={item.img}></img>
             <div className='cartItemTitle'>{item.name}</div>
             <div className='cartItemPrice'>${item.price}.00</div>

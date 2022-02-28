@@ -21,17 +21,17 @@ const Footer = () => {
 
     return(
         <div id='footerContainer'>
-            <Link to='/about'>About</Link>
-            <Link to='/shop'>Shop</Link>
+            <Link to='/about' className='footerNavButton'>About</Link>
+            <Link to='/shop' className='footerNavButton'>Shop</Link>
             <div id='emailContainer'>
                 Join Our Mailing List!
                 <form onSubmit={submitEmail} id='emailForm'>
                     <input type='text' value={email} onChange={handleChange} placeholder='Email'></input>
-                    <button type='submit'>Submit</button>
+                    <button id='emailBtn' type='submit'>Submit</button>
                 </form>
             </div>
             <div id='myInfo'>
-                Designed by Jonathan Andrade Valenzuela 
+                <strong>Designed by Jonathan Andrade Valenzuela </strong>
                 <div id='gitLogoContainer'>
                     <img onClick={sendToGithub} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
                 </div>
